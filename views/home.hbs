@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/> <!-- closing one-line elements is good :3 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>{{title}}</title> <!-- working title (just looked at hbs documentation) -->
+        <link rel="stylesheet" href="/css/style.css"> <!-- fonts are moved inside css -->
+    </head>
+
+    <body>
+        <div class="navbar"> <!-- yeah that thing calls "navigation bar" if you didn't knew -->
+            <a class="music" href="https://soundcloud.com/softyshul/tracks"> <!-- using link element instead div is better because icons are clickable now -->
+                My Music
+                <ion-icon name="musical-notes-outline"></ion-icon> <!-- well, sometimes closing like that is only one way -->
+            </a>
+            <a class="home" href="/about">
+                My portolio
+                <ion-icon name="planet-outline"></ion-icon>
+            </a>
+            <a class="contact" href="https://discord.gg/rf9uHsUuAc"> 
+                My contacts <!-- or whatever, just with text looks a bit better -->
+                <ion-icon name="mail-unread-outline"></ion-icon>
+            </a>
+        </div>
+
+        <main> <!-- just my habit from reactjs -->
+            <div class="userCard"> <!-- made class for ur profile cus think you will add smth else -->
+                <img src="/images/Art.png" alt="profile picture"/> <!-- nice pfp btw -->
+                <div>
+                    <h1 class="hrainbow">Who Am I and What I do?</h1>
+                    <h2>Valtsu</h2>
+                    <h2>Cinerbi</h2>
+                    <p>Self-taught Musician, Artist, and Photographer</p>
+                </div>
+            </div>
+        </main>
+
+         <!-- >. > ionicons, never used icons libraries except reactIcons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
